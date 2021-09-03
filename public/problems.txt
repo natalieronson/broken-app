@@ -1,0 +1,19 @@
+1. The onSubmit function is missing e.preventDefault when the form is submitted
+
+2. The onSubmit function is erasing the other items when a new item is added.
+Items needs to be spread in the new array [...items, newItem]
+
+3. A component is changing a controlled input to be uncontrolled console warning
+- the value for an input cannot be undefined so need to set a default value
+
+4. The delete button doesn't work, you need to pass the id you want to delete
+
+5. The id is incorrect when you add an item, you need to add +1 to the length
+
+6. Filter is returning an array on the ItemPage but the display is expecting an object
+
+7. The item id needs toString() to match the url id
+
+8. The link to return to the main page has no path
+
+9. The map on the main page is missing a key (warning)
